@@ -1,0 +1,126 @@
+body {
+    background-image: url(images/paper-texture.png);
+}
+
+#footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: #5A5A5A;
+    font-size: 20px;
+}
+
+/*Main title of Rock, Paper, Scissors */
+.desc {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    color: #5A5A5A;
+}
+.main-title {
+    font-size: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 2px #5A5A5A;
+    margin-top: 0;
+}
+
+/*The three buttons for rock, paper, and scissors*/
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    
+}
+
+#rock {
+    display: flex;
+    background-image: url(images/rock.png);
+    background-color: transparent;
+    background-size: 100% 100%;
+    width: 150px;
+    height: 150px;;
+    border: none;
+    border-radius: 50%;
+}
+
+/*Style changes when buttons are hovered or clicked*/
+#rock:hover, #paper:hover, #scissors:hover {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+#rock:focus, #paper:focus, #scissors:focus {
+    box-shadow: 0 0 8px 8px lightblue;
+}
+
+#paper {
+    display: flex;
+    background-image: url(images/paper.png);
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;;
+    border: none;
+    border-radius: 50%;
+}
+
+#scissors {
+    display: flex;
+    background-image: url(images/scissors.png);
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 150px;
+    height: 150px;;
+    border: none;
+    border-radius: 50%;
+}
+
+/*Explaining what beats what. example: 'rock beats scissors' */
+#explanation {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#gameinfo {
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #5A5A5A;
+}
+
+/*fixed scoreboard that shows the computer and player wins for the round*/
+.scoreboard {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+#playerwins, #computerwins, #round {
+    font-size: 26px;
+    font-family: courier;
+    text-shadow: 1px 1px 2px #5A5A5A;
+}
+#playerwins {
+    color: #007aff;
+}
+#computerwins {
+    color: #ff2d55;
+}
+
+/*displays the images of the result of who won*/
+#result {
+    display: flex;
+    justify-content: center;
+}
+#win, #loser {
+    background-color: transparent;
+    display: none;
+    width: 22%;
+    min-height: 60px;
+    height: 22%;
+    object-fit: cover;
+}
+
+
